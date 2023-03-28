@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Container full */
+.container{
+    width: 80%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+/* barra de navegación */
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+/* patita de perro en navbar */
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+/* icono del menu*/
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+/* barra de navegación*/
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right:  30px;
+}
+/* cambiar color despues*/
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #00fd72;
+}
+/* colores y fuentes del texto banner*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 10px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: fff;
+    font-weight: 100;
+
+}
+/* la flecha esa horrenda*/
+.tam{
+    width: 60px;
+    display: none;
+}
+/* el boton de adopta ahora*/
+button{
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right,#00fd72,#1928f8);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 2.s;
+}
+/* funcion hover del botón*/
+button:hover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: width 2.s;
+
+}
+/* la barrita a la izquierda ya no queda bien
+col-1 ::after {
+    content: '';
+    width: 30px;
+    height: 20%;
+    background: linear-gradient(#00fd72,#1928f8);
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+*/
+.col-2{
+    width: 50%;
+    position:relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+/* imagen perro let me do it for you en index */
+.my-image {
+    width: 50x; 
+    height: auto; 
+  }
+
+/* barra de abajo*/
+  .bottom-bar {
+    background: rgb(25,40,248);
+    background: linear-gradient(330deg, rgba(25,40,248,1) 62%, rgba(0,253,114,1) 73%);
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+/* el boton animado de mierda*/
+.play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+
+}
+/* Boton de patita de perro*/
+.play-btn-inner{
+    height: 30px;
+    width: 35px;
+    border: 2px solid transparent;
+    /* Circulo alrededor de patita*/
+    border-radius: 50%;
+    background-image: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left, #00fd72,#1928f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    text-align: center;
+}
+
+.play-btn-inner .fa{
+    padding:18px 0;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+    /* flias columnas e iumagenes para adopcion y hub gatos y perros*/
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
